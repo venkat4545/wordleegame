@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { AppContext } from "../App";
 
-function GameOver() {
+function gamefinish() {
   const {
     
-    currAttempt,
+    currentattempted,
     gameOver,
    
     correctWord,
@@ -19,10 +19,10 @@ function GameOver() {
       </h3>
       <h1>Correct Word: {correctWord}</h1>
       {gameOver.guessedWord && (
-        <h3>You guessed in {currAttempt.attempt} attempts</h3>
+        <h3>You guessed in {currentattempted.attempt} attempts</h3>
       )}
     </div>
   );
 }
 
-export default GameOver;
+export default gamefinish;
